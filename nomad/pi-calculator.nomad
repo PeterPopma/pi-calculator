@@ -1,7 +1,7 @@
 job "pi-calculator" {
   datacenters = ["europe-west1-c", "europe-west1-d"]
 
-  group "demo" {
+  group "nl.peterpopma" {
     count = 1
 
     scaling {
@@ -25,7 +25,7 @@ job "pi-calculator" {
 
     network {
       port "http" {
-        to = 9090
+        to = 8080
       }
     }
 
