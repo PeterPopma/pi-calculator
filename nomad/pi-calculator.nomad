@@ -1,5 +1,5 @@
 job "pi-calculator" {
-  datacenters = ["europe-west1-c", "europe-west1-d"]
+  datacenters = ["europe-west1-b", "europe-west1-c"]
 
   group "nl.peterpopma" {
     count = 1
@@ -7,7 +7,7 @@ job "pi-calculator" {
     scaling {
       enabled = true
       min     = 1
-      max     = 4
+      max     = 8
 
       policy {
         evaluation_interval = "2s"

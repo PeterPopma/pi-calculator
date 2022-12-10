@@ -1,6 +1,6 @@
 job "haproxy" {
   region      = "global"
-  datacenters = ["europe-west1-c", "europe-west1-d"]
+  datacenters = ["europe-west1-b", "europe-west1-c"]
   type        = "service"
 
   group "haproxy" {
